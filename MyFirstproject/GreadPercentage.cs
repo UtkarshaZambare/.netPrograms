@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +29,41 @@ namespace MyFirstproject
             double totalmarks = sub1 + sub2 + sub3 + sub4 + sub5;
 
             double per = (totalmarks / (5 * 100)) * 100;
+
+            Console.WriteLine($"percentage:{per}%");
+
+            string grade;
+
+            if (per >= 90)
+            {
+                grade = "A";
+            }
+
+            else if (per >= 80) {
+                grade = "B";
+            }
+
+            else if (per >=70)
+            {
+                grade = "C";
+            }
+
+            else if (per >= 60)
+            {
+                grade = "D";
+            }
+
+            else if (per >= 50)
+            {
+                grade = "E";
+            }
+            else
+            {
+                grade = "F";
+            }
+
+            
+            Console.WriteLine($"Grade: {grade}");
         }
     }
 }
